@@ -1,0 +1,28 @@
+{
+  "name": "puppeteer",
+  "version": "1.0.0",
+  "description": "puppeter part2",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarniaTu/PuppeteerPartTwo.git"
+  },
+  "keywords": [
+    "puppeteer",
+    "tickets-order"
+  ],
+  "author": "Marina Turbina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarniaTu/PuppeteerPartTwo/issues"
+  },
+  "homepage": "https://github.com/MarniaTu/PuppeteerPartTwo#readme",
+  "dependencies": {
+    "jest": "^29.7.0",
+    "jest-puppeteer": "^10.0.1",
+    "puppeteer": "^22.12.0"
+  }
+}
