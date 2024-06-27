@@ -55,13 +55,13 @@ describe("Cinema tickets order", () => {
     const actual = await getAttribute(page, "a:nth-child(5)");
     expect(actual).toContain("page-nav__day_chosen");
     
-    await clickElement(page, ".movie-seances__time[href='#'][data-seance-id='191']");
+    await clickElement(page, ".movie-seances__time[href='#'][data-seance-id='190']");
     await page.goto("https://qamid.tmweb.ru/client/hall.php", 90000);
     
     const filmTitle = await getText(page, ".buying__info-title");
     expect(filmTitle).toEqual("Унесенные ветром.");
     const filmStart = await getText(page, ".buying__info-start");
-    expect(filmStart).toEqual("Начало сеанса: 14:00");
+    expect(filmStart).toEqual("Начало сеанса: 17:00");
     
     await clickElement(page, "div:nth-child(10) span:nth-child(8)");
     const chairSelected = await getAttribute(page, "div:nth-child(10) span:nth-child(8)");
